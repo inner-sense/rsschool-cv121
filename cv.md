@@ -39,7 +39,7 @@ function largest (n){
 }
 ```
 ## Work experience
-* this CV
+* This CV
 * Training projects are coming up soon...
 
 ## Education
