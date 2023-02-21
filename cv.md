@@ -44,10 +44,12 @@ function largest (n){
 
 ## Education
 * University: Peter the Great St.Petersburg Polytechnic University, direction "Electric power engineering and electrical engineering", specialty "Relay protection and automation of electric power systems".
-Courses:
-* Studied the basics of html, css, js on my own
+* Courses:
+Studied the basics of html, css, js on my own;
+Html course on the code-basics website;
+CSS course on the code-basics website;
 (will be supplemented)
 
-# Languages
+## Languages
 * Russian (Native)
 * English (B1)
