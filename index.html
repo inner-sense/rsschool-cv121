@@ -2,65 +2,76 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
 </head>
 <body>
-    <main>
-        <section class="left-side">
-            <h1>Sukhoparov Andrew</h1>
-            <h2>Frontend developer</h2>
-            <img src="photo1656663845.jpeg" alt="Candidate's photo">
-            <h3>About me</h3>
-            <p>I am a fourth year student. No experience, currently actively learning new material. Strengths: Fast learning and adaptation; Full immersion in the task at hand; Able to work in a team. </p>
-            <h3>Contact information</h3>
-            <p>
-                <ul>
-                    <li>Address: Saint Petersburg, Russia</li>
-                    <li>Phone: +7(953)751-76-48</li>
-                    <li>E-mail: sukhoparov.andrew@gmail.com</li>
-                    <li>GitHub: <a href="https://github.com/inner-sense" target="_blank">inner-sense</a></li>
-                    <li>Telegram: Andrew_Suhoparov</li>
-                </ul>
-            </p>
-        </section>
-        <section class="right-side">
-            <h3>Education</h3>
-            <p>
-                <ul>
-                    <li>University: Peter the Great St.Petersburg Polytechnic University, direction "Electric power engineering and electrical engineering", specialty "Relay protection and automation of electric power systems".</li>
-                    <li>Courses:
-                        <ul>
-                            <li>Html course on the code-basics website</li>
-                            <li>CSS course on the code-basics website</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-            <h3>Work experience</h3>
-            <p>This CV</p>
-            <h3>Skills</h3>
-            <p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS (SCSS/SASS)</li>
-                    <li>BEM methodology</li>
-                    <li>Version control systems: Git/GitHub</li>
-                    <li>Editors: VS Code, Sublime text</li>
-                </ul>
-            </p>
-            <h3>Languages</h3>
-            <p>
-                <ul>
-                    <li>Russian (Native)</li>
-                    <li>English (B1)</li>
-                </ul>
-            </p>
-            <h3>Example code</h3>
-            <div>From Codewars (Find the largest prime number containing n digits):
-    <pre>function largest (n){
+    <div class="wrapper">
+        <main>
+            <section class="left-side">
+                <h1>Sukhoparov Andrew</h1>
+                <h2>Frontend developer</h2>
+                <img src="img/photo1656663845.jpeg" alt="Candidate's photo">
+                <h3>About me</h3>
+                <p>I am a fourth year student. No experience, currently actively learning new material. Strengths: Fast learning and adaptation; Full immersion in the task at hand; Able to work in a team. </p>
+                <div class="left-side__separation"></div>
+                <h3>Contact information</h3>
+                <p>
+                    <ul class="contact">
+                        <li class="contact__icon contact__address">Saint Petersburg, Russia</li>
+                        <li class="contact__icon contact__phone">+7(953)751-76-48</li>
+                        <li class="contact__icon contact__email">sukhoparov.andrew@gmail.com</li>
+                        <li class="contact__icon contact__git"><a class="contact__git__link" href="https://github.com/inner-sense" target="_blank">inner-sense</a></li>
+                        <li class="contact__icon contact__telegram"><a class="contact__telegram__link" href="https://t.me/Andrew_Suhoparov" target="_blank">Andrew_Suhoparov</a></li>
+                    </ul>
+                </p>
+            </section>
+            <section class="right-side">
+                <div class="right-side__vertical-decoration"></div>
+                <div class="right-side__square-decoration"></div>
+                <div class="right-side__horizontal-decoration"></div>
+                <h3 class="right-side__first-headline">Education</h3>
+                <p>
+                    <ul>
+                        <li>University: Peter the Great St.Petersburg Polytechnic University, direction "Electric power engineering and electrical engineering", specialty "Relay protection and automation of electric power systems".</li>
+                        <li>Courses:
+                            <ul>
+                                <li>Html course on the code-basics website</li>
+                                <li>CSS course on the code-basics website</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <h3>Work experience</h3>
+                <p>
+                    <ul>
+                        <li>This CV</li>
+                    </ul>
+                </p>
+                <h3>Skills</h3>
+                <p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS (SCSS/SASS)</li>
+                        <li>BEM methodology</li>
+                        <li>Version control systems: Git/GitHub</li>
+                        <li>Editors: VS Code, Sublime text</li>
+                    </ul>
+                </p>
+                <h3>Languages</h3>
+                <p>
+                    <ul>
+                        <li>Russian (Native)</li>
+                        <li>English (B1)</li>
+                    </ul>
+                </p>
+                <h3>Example code</h3>
+                <div>From Codewars (Find the largest prime number containing n digits):
+                <pre>
+function largest (n){
     if (n <= 0 || !Number.isInteger(n)) {
         return false;
     }
@@ -68,19 +79,20 @@
     let i = 2;
     while (i < p){
         if (p % i){ 
-        i += 1;
+            i += 1;
         }
         else{
-        i = 2, p -= 1;
+            i = 2, p -= 1;
         }
     }
     return p;
-    }</pre>
-            </div>
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
+}</pre>
+                </div>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
 </body>
 </html>
